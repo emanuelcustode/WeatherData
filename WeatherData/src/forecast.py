@@ -49,11 +49,15 @@ ax.legend()
 
 st.pyplot(fig)
 
-st.markdown(
-    "In dieser Abbildung werden die Hitzetage der letzten 10 Jahre mit dem bisherigen Stand für 2025 (orange) verglichen. Die gestrichelte Linie zeigt"
-    "den Durchschnittswert der Jahre 2015–2024 (ca. 23,9 Tage). "
-    "Schon jetzt liegt 2025 leicht darunter, zu beachten allerdings ist das Jahr noch nicht abgeschlossen."
-)
+st.markdown("""
+**🟦 Vergleich der Hitzetage 2015–2025**
+
+In dieser Abbildung werden die Hitzetage der letzten 10 Jahre mit dem bisherigen Stand für das Jahr 2025 (orange) verglichen.  
+Die gestrichelte Linie markiert den Durchschnittswert der Jahre 2015 bis 2024 – dieser liegt bei rund **23,9 Tagen** mit Temperaturen über 30 °C.
+
+Im Jahr 2025 liegt die Anzahl bisher leicht darunter. Es ist jedoch zu beachten, dass das Jahr noch nicht abgeschlossen ist – insbesondere die Monate Juli und August könnten die Statistik noch maßgeblich verändern.
+""")
+
 
 df_this_year = df_combined[df_combined['jahr']==2025]
 
@@ -84,11 +88,16 @@ ax2.set_ylabel("Forecast")
 st.pyplot(fig2)
 
 
-st.markdown(
-    """Diese Grafik zeigt eine Hochrechnung der Hitzetage für das laufende Jahr 2025. 
-    Auf Basis der bisherigen Entwicklung (bis Anfang Juli) werden rund 18 Hitzetage prognostiziert. 
-    Das liegt aktuell unter dem Durchschnitt, könnte sich aber im weiteren Jahresverlauf noch deutlich ändern."""
-)
+st.markdown("""
+**📈 Prognose für das Jahr 2025**
+
+Diese Grafik zeigt eine Hochrechnung für die erwarteten Hitzetage im Jahr 2025.  
+Die Prognose basiert auf der bisherigen Entwicklung bis Anfang Juli und schätzt, dass etwa **18 Hitzetage** (≥ 30 °C) zu erwarten sind.
+
+Dieser Wert liegt derzeit unter dem Durchschnitt der vergangenen Jahre.  
+Wie sich das Jahr tatsächlich entwickelt, hängt jedoch stark vom weiteren Verlauf des Sommers ab ein heißer August könnte die Prognose noch deutlich übertreffen.
+""")
+
 
 
 

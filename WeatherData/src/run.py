@@ -8,6 +8,7 @@ pg = st.navigation([
         st.Page("welcome.py"),
         st.Page("hot_days.py"),
         st.Page("forecast.py"),
+        st.Page("interactive_page.py"),
      ])
 
 
